@@ -35,6 +35,11 @@ wire [7:0] data_i = ~data_in_oe ? MDATABUS_in : 8'd0;
 wire [7:0] data_r_o;
 assign MDATABUS_out = data_r_o;
 
+ wire[11:0] ch_a_o;
+ wire[11:0] ch_b_o;
+ wire[11:0] ch_c_o;
+ wire[13:0] pcm14s_o;
+
 ym2149_audio u_ym2149_audio(
   .clk_i        ( clk_i        ),
   .en_clk_psg_i ( en_clk_psg_i ),

@@ -43,14 +43,14 @@ always @(posedge CLKSYS) begin
   end
 end
 
-rom #("./audio/RELAY_OFF.mem", 11, 8) replay_off(
+rom #("../audio/RELAY_OFF.mem", 11, 8) replay_off(
   .clk  ( CLKSYS    ),
   .addr ( pcm_addr  ),
   .dout ( off_sound ),
   .ce_n ( 1'b0      )
 );
 
-rom #("./audio/RELAY_ON.mem", 11, 8) replay_on(
+rom #("../audio/RELAY_ON.mem", 11, 8) replay_on(
   .clk  ( CLKSYS   ),
   .addr ( pcm_addr ),
   .dout ( on_sound ),
