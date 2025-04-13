@@ -38,3 +38,5 @@ set_global_assignment -name VERILOG_FILE ../rtl/x74139.v
 set_global_assignment -name VERILOG_FILE ../rtl/x74244.v
 set_global_assignment -name VERILOG_FILE ../rtl/ym2149_audio.v
 set_global_assignment -name VERILOG_FILE ../rtl/pcm.v
+set_global_assignment -name SYSTEMVERILOG_FILE "../FM-7.sv"
+set_global_assignment -name QIP_FILE "../mist-modules/mist.qip"
